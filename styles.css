@@ -1,0 +1,36 @@
+#add {  /*Somehow my bootstrap styling was being overridden when my submit button was clicked due to something in my clear inputs code. Added this high specificity styling as a work around since I couldn't figure out the issue. */
+    background-color: #007bff; /*setting background color to blue since it was changing to white when clicked*/
+    color: white; /*setting text color to white since it was changing to black when clicked*/
+}
+
+body { /*setting body background color*/
+    background-color: lightgray;
+}
+
+.Banner { /*H1 and Banner image styling*/
+    background-image: url('assets/kevin-laminto-7PqRZK6rbaE-unsplash.jpg'); /*image source*/
+    background-size: cover; /*sizing*/
+    background-position: center; /*centering image*/
+    text-align: center; /*centering text*/
+    padding: 100px 0; /*adding padding*/
+    color: black; /*text color*/
+    text-shadow: 2px 2px 6px white; /*added white shadow to make text readable over dark background image (apparently trying to do a white text "outline" is not supported on all broswers so I stuck with shadowing)*/ 
+    margin-top: 20px;   /*top and bottom margins*/
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif; /*changed to more readble font*/
+}
+
+h4 {  /*h4 styling with cnetered text and more readable font*/
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h6 { /*h6 styling with centered text and more readable font with margin bottom*/
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+footer {  /*adding bold to footer text*/
+    font-weight: bold;
+}

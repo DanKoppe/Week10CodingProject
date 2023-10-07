@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 10 Project</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="container">  <!--body set to container class-->
+<!--Headers-->
+    <div class="Banner"> <!--Banner div for image and text styling-->
+        <H1>Submit a Game for Me to Play Next!</H1>
+    </div>
+        <H4>Use the form below to submit a game that you think I should play next.</H4>
+        <H6>(Note: You can submit multiple games and reorder them when you are finished.)</H6>
+    
+<!--Entry Data Card Class-->
+    <section class ="card">  <!--groupong related content into a section with a card class-->
+        <div class="card-body"> <!--setting card body-->
+            <div class="row"> <!--creating horizontal row-->
+                <div class="col-md"> <!--setting column to stack on medium viewports-->
+                    <div class="form-group"> <!--setting class to bootstrap form-->
+                        <label for="new-game-title">Game Title:</label> <!--label for input field with for title to target with input id-->
+                        <input type="text" class="form-control" id="new-game-title"> <!--text style input with form-control boostrap class and Id targeting label-->
+                    </div>
+                </div>
+                <div class="col-md"> <!--see above-->
+                    <div class="form-group">
+                        <label for="new-genre">Genre:</label>
+                        <input type="text" class="form-control" id="new-genre">
+                    </div>
+                </div>
+                <div class="col-md"> <!--see above-->
+                    <div class="form-group">
+                        <label for="new-release-date">Release Date:</label>
+                        <input type="date" class="form-control" id="new-release-date"> <!--date style input-->
+                    </div>
+                </div>
+                <div class="col-md"> <!--see above-->
+                    <div class="form-group">
+                        <label for="new-metascore">Metascore:</label>
+                        <input type="text" class="form-control" id="new-metascore">
+                    </div>
+                </div>
+                <div class="col-md align-self-end"> <!--aligning button to the end to streamline look-->
+                    <div class="form-group">
+                        <button id="add" class="btn btn-primary form-control">Submit</button> <!--bootstrap button with id for Javascript function-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--Table-->
+    <table id="list" class="table table-dark table-striped table-hover"> <!--bootstrap styled table with ID for JS-->
+        <thead>
+            <tr>
+                <th scope="col">Game Title</th> <!--table row Headers with column scope and titles. Table data rows to be added dynamically user input and JS-->
+                <th scope="col">Genre</th>
+                <th scope="col">Release Date</th>
+                <th scope="col">Metascore</th>
+                <th scope="col">Remove</th>
+            </tr>
+        </thead>
+    </table>
+
+<!--Footer-->
+    <hr><!--thematic break before footer section-->
+        <footer>
+            <p>&copy; 2023</p> <!--footer paragraph with copywrite symbol and year-->
+        </footer>
+
+<script src="node_modules/jquery/dist/jquery.js"></script>                  <!-- Script sources-->
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="Week10Project.js"></script>
+    
+</body>
+</html>
